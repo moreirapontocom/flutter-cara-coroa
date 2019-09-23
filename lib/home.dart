@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   String selecaoJogo;
 
   String logicaJogo() {
-    int numeroAleatorio = Random().nextInt(2);
+    int numeroAleatorio = Random().nextInt( opcoesJogo.length );
     return selecaoJogo = opcoesJogo[numeroAleatorio];
   }
 
